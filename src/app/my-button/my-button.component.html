@@ -1,8 +1,8 @@
 <p>
-    <button (click)="isLiked()"> 
+    <button [ngClass] = "buttonColor()" (click)="isLiked()"> 
         LIKE
     </button>
 
-    <span> Image is liked == {{ likeImage }}</span>
+    <span><font size="5">Image is liked == {{ likeImage }}</font></span>
 
 </p>

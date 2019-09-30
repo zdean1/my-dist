@@ -1,0 +1,12 @@
+.is-liked{
+    background-color: green;
+    padding: 10px 15px;
+    border-radius: 12px;
+    font-size: 16px;
+}
+.is-not-liked{
+    background-color: default;
+    padding: 10px 15px;
+    border-radius: 12px;
+    font-size: 16px;
+}

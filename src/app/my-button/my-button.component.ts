@@ -23,4 +23,11 @@ export class MyButtonComponent implements OnInit {
     this.likeImage = this._myservice.likeImage(this.likeImage);
     return this.likeImage;
   }
+
+  buttonColor() {
+    return {
+      'is-liked': this.likeImage == true,
+      'is-not-liked': this.likeImage == false,
+   }
+  }
 }
