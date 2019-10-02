@@ -1,7 +1,11 @@
 <p>
-    <button [ngClass] = "buttonColor()" (click)="isLiked()"> 
-        LIKE
+    
+    <button [ngClass]="{'is-liked': likeImage == true,
+                        'is-not-liked': likeImage == false}" 
+            (click)="isLiked()"> 
+        {{ buttonText }}
     </button>
+
 
     <span><font size="5">Image is liked == {{ likeImage }}</font></span>
 

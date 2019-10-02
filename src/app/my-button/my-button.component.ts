@@ -14,6 +14,8 @@ export class MyButtonComponent implements OnInit {
   }
 
   likeImage: boolean = false;
+  buttonText: string = 'LIKE';
+
 
   isLiked() {
     if (this.likeImage == false){
@@ -21,13 +23,8 @@ export class MyButtonComponent implements OnInit {
     } else { console.log('unlike'); }
 
     this.likeImage = this._myservice.likeImage(this.likeImage);
-    return this.likeImage;
-  }
-
-  buttonColor() {
-    return {
-      'is-liked': this.likeImage == true,
-      'is-not-liked': this.likeImage == false,
-   }
+    if (this.likeImage == false){
+      this.buttonText = 'LIKE';
+    } else { this.buttonText = 'UNLIKE'; }
   }
 }
