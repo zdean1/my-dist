@@ -1,3 +1,16 @@
+import { Message } from './Message';
+
 export class Messages {
-    messages: string[];
+    messages: Message[];
+
+    constructor() {
+     }
+
+     pushMessages(message: Message){
+        this.messages.push(message);
+     }
+
+     getMessages() {
+         return this.messages;
+     }
 }
