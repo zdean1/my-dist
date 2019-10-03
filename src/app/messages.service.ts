@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { User } from './models/user';
-import { Message } from './models/Message';
-import { Messages } from './models/Messages';
+import { Message } from './models/message';
+import { Messages } from './models/messages';
 
 
 @Injectable({
